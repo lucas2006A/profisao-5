@@ -260,7 +260,7 @@ section {
 }
 
 .comparison-card {
-    background: white;
+    background: rgb(255, 0, 0);
     border-radius: 15px;
     padding: 2rem;
     box-shadow: var(--shadow);
