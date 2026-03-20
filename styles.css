@@ -309,7 +309,7 @@ section {
 }
 
 .state-box.pr-better {
-    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    background: linear-gradient(135deg, #dbeafe, #0a5dc4);
     border-color: var(--primary-pr);
 }
 
