@@ -345,7 +345,7 @@ section {
 .stat-card {
     padding: 2rem;
     border-radius: 15px;
-    color: rgb(247, 0, 234);
+    color: rgb(8, 122, 56);
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
