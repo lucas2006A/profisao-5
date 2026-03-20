@@ -16,7 +16,7 @@
             <div class="nav-content">
                 <div class="logo">
                     <span class="logo-icon">🌾</span>
-                    <span class="logo-text">MG vs PR</span>
+                    <span class="logo-text">MT vs PR</span>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#hero">Início</a></li>
@@ -32,7 +32,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-background">
-            <img src=https://terramagna.com.br/wp-content/uploads/2022/06/Imagem-agricultura-verde.jpg
+            <img src="https://terramagna.com.br/wp-content/uploads/2022/06/Imagem-agricultura-verde.jpg" alt="Agricultura" class="hero-image">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -193,20 +193,21 @@
             
             <div class="ia-container">
                 <div class="chat-box">
-                    <div class="chat-messages">
-                        <div class="message bot-message">
-                            <p>Olá! 👋 Sou a IA especializada em comparar Mato Grosso e Paraná. Como posso ajudá-lo?</p>
-                        </div>
-                        <div class="message user-message">
-                            <p>Qual estado é melhor para investir em agropecuária?</p>
-                        </div>
-                        <div class="message bot-message">
-                            <p>Mato Grosso é excelente para agropecuária com custos menores (R$ 3.360/mês) e crescimento PIB de 5,8%. Ideal para quem busca expansão com melhor custo-benefício! 🌾</p>
-                        </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- As mensagens serão adicionadas via JavaScript -->
+                    </div>
+                    <div class="suggestions-chips" id="suggestionsChips">
+                        <button class="chip" data-question="Comparar produtividade MT e PR">📊 Comparar produtividade</button>
+                        <button class="chip" data-question="Melhor estado para investir no agro">💰 Melhor para investir</button>
+                        <button class="chip" data-question="Tecnologias no campo">🚜 Tecnologias</button>
+                        <button class="chip" data-question="Desafios do produtor rural">🌾 Desafios</button>
                     </div>
                     <div class="chat-input">
-                        <input type="text" placeholder="Digite sua pergunta...">
-                        <button class="send-btn">Enviar</button>
+                        <input type="text" id="chatInput" placeholder="Digite sua pergunta...">
+                        <button class="send-btn" id="sendBtn">Enviar</button>
+                    </div>
+                    <div class="chat-footer">
+                        <span class="typing-indicator" id="typingIndicator">🤖 Assistente está digitando...</span>
                     </div>
                 </div>
             </div>
@@ -256,7 +257,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Plataforma Comparativa MG vs PR. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Plataforma Comparativa MT vs PR. Todos os direitos reservados.</p>
             <p>Desenvolvido com ❤️ para ajudar sua decisão</p>
         </div>
     </footer>
