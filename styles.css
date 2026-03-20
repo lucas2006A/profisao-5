@@ -248,12 +248,36 @@ section {
 /* ============================================
    COMPARATIVO SECTION
    ============================================ */
-.comparativo {
+..comparativo {
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.comparativo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url("https://blog.cresol.com.br/wp-content/uploads/2019/08/produtor-rural-olhando-para-o-campo.jpg");
-    background-size: contain; /* Mostra a imagem inteira sem cortar, mas pode deixar espaços vazios */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita duplicação */
-    background-color: #f0f0f0; /* Cor de fundo para os espaços vazios */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    z-index: -2;
+}
+
+/* Camada escura para aumentar contraste */
+.comparativo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* ajuste a opacidade */
+    z-index: -1;
 }
 .comparison-grid {
     display: grid;
