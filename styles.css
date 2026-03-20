@@ -587,7 +587,7 @@ section {
 
 .state-btn.active {
     border-color: var(--primary-mt);
-    background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+    background: linear-gradient(135deg, #dcfce7, #00571e);
     color: var(--primary-mt);
 }
 
