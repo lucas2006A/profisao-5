@@ -250,7 +250,8 @@ section {
    ============================================ */
 ..comparativo {
     position: relative;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* cor de fallback */
+    overflow: hidden; /* esconde o excesso do pseudo-elemento */
 }
 
 .comparativo::before {
@@ -264,8 +265,8 @@ section {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(8px);
-    z-index: -2;
+    filter: blur(8px); /* desfoque de 8px */
+    z-index: -1; /* coloca atrás do conteúdo */
 }
 
 /* Camada escura para aumentar contraste */
