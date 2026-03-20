@@ -304,7 +304,7 @@ section {
 }
 
 .state-box.mt-better {
-    background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+    background: linear-gradient(135deg, #dcfce7, #4ed87e);
     border-color: var(--primary-mt);
 }
 
