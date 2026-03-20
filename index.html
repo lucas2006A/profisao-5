@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mato Grosso vs Paraná - Comparativo Econômico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🌾</span>
+                    <span class="logo-text">MG vs PR</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#comparativo">Comparativo</a></li>
+                    <li><a href="#dados">Dados</a></li>
+                    <li><a href="#ia">IA</a></li>
+                    <li><a href="#comentarios">Comentários</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663435431882/7sVfRzFyjFbh8dtQpiNSJD/farm-hero_70fd4dca.png" alt="Fazenda" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Mato Grosso vs Paraná</h1>
+            <p class="hero-subtitle">Descubra as oportunidades econômicas e qualidade de vida entre os dois maiores polos agroindustriais do Brasil</p>
+            <button class="cta-button" onclick="document.getElementById('comparativo').scrollIntoView({behavior:'smooth'})">
+                Explorar Agora
+                <span class="arrow">→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Comparativo Section -->
+    <section id="comparativo" class="comparativo">
+        <div class="container">
+            <h2 class="section-title">Comparativo Econômico</h2>
+            <p class="section-subtitle">Análise detalhada dos principais indicadores</p>
+            
+            <div class="comparison-grid">
+                <!-- Card 1: Custo de Vida -->
+                <div class="comparison-card">
+                    <div class="card-header">
+                        <span class="card-icon">💰</span>
+                        <h3>Custo de Vida</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="state-box mt-better">
+                            <p class="state-label">Mato Grosso</p>
+                            <p class="state-value">R$ 3.360/mês</p>
+                            <span class="badge">Melhor</span>
+                        </div>
+                        <div class="state-box">
+                            <p class="state-label">Paraná</p>
+                            <p class="state-value">R$ 4.300/mês</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: PIB -->
+                <div class="comparison-card">
+                    <div class="card-header">
+                        <span class="card-icon">📈</span>
+                        <h3>Crescimento PIB</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="state-box mt-better">
+                            <p class="state-label">Mato Grosso</p>
+                            <p class="state-value">5,8%</p>
+                            <span class="badge">Melhor</span>
+                        </div>
+                        <div class="state-box">
+                            <p class="state-label">Paraná</p>
+                            <p class="state-value">4,5%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Economia -->
+                <div class="comparison-card">
+                    <div class="card-header">
+                        <span class="card-icon">🏭</span>
+                        <h3>Foco Econômico</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="state-box">
+                            <p class="state-label">Mato Grosso</p>
+                            <p class="state-value">Agropecuária</p>
+                        </div>
+                        <div class="state-box pr-better">
+                            <p class="state-label">Paraná</p>
+                            <p class="state-value">Indústria + Agro</p>
+                            <span class="badge">Diversificado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Produção -->
+                <div class="comparison-card">
+                    <div class="card-header">
+                        <span class="card-icon">🌽</span>
+                        <h3>Produção Agrícola</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="state-box mt-better">
+                            <p class="state-label">Mato Grosso</p>
+                            <p class="state-value">Soja, Milho, Algodão</p>
+                            <span class="badge">Maior</span>
+                        </div>
+                        <div class="state-box">
+                            <p class="state-label">Paraná</p>
+                            <p class="state-value">Soja, Milho</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-grid">
+                <div class="stat-card mt-card">
+                    <h4>Mato Grosso</h4>
+                    <p class="stat-value">R$ 3.360</p>
+                    <p class="stat-label">Custo de vida mais acessível</p>
+                </div>
+                <div class="stat-card pr-card">
+                    <h4>Paraná</h4>
+                    <p class="stat-value">Polo Logístico</p>
+                    <p class="stat-label">Maior diversificação industrial</p>
+                </div>
+                <div class="stat-card growth-card">
+                    <h4>Crescimento</h4>
+                    <p class="stat-value">5,8% vs 4,5%</p>
+                    <p class="stat-label">MT lidera em crescimento PIB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dados Section -->
+    <section id="dados" class="dados">
+        <div class="container">
+            <h2 class="section-title">Dados Econômicos Detalhados</h2>
+            <p class="section-subtitle">Informações atualizadas sobre os dois estados</p>
+            
+            <div class="dados-grid">
+                <div class="dados-card">
+                    <h3>Mato Grosso</h3>
+                    <ul class="dados-list">
+                        <li><strong>PIB:</strong> R$ 280 bilhões</li>
+                        <li><strong>População:</strong> 3,8 milhões</li>
+                        <li><strong>Principais setores:</strong> Agropecuária, Comércio</li>
+                        <li><strong>Taxa de desemprego:</strong> 4,2%</li>
+                        <li><strong>Salário médio:</strong> R$ 2.850</li>
+                    </ul>
+                </div>
+                <div class="dados-card">
+                    <h3>Paraná</h3>
+                    <ul class="dados-list">
+                        <li><strong>PIB:</strong> R$ 320 bilhões</li>
+                        <li><strong>População:</strong> 11,4 milhões</li>
+                        <li><strong>Principais setores:</strong> Indústria, Agropecuária</li>
+                        <li><strong>Taxa de desemprego:</strong> 5,1%</li>
+                        <li><strong>Salário médio:</strong> R$ 3.200</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="chart-placeholder">
+                <p>📊 Gráficos interativos com dados em tempo real</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IA Section -->
+    <section id="ia" class="ia-section">
+        <div class="container">
+            <h2 class="section-title">Análise com IA</h2>
+            <p class="section-subtitle">Converse com nossa inteligência artificial para análises personalizadas</p>
+            
+            <div class="ia-container">
+                <div class="chat-box">
+                    <div class="chat-messages">
+                        <div class="message bot-message">
+                            <p>Olá! 👋 Sou a IA especializada em comparar Mato Grosso e Paraná. Como posso ajudá-lo?</p>
+                        </div>
+                        <div class="message user-message">
+                            <p>Qual estado é melhor para investir em agropecuária?</p>
+                        </div>
+                        <div class="message bot-message">
+                            <p>Mato Grosso é excelente para agropecuária com custos menores (R$ 3.360/mês) e crescimento PIB de 5,8%. Ideal para quem busca expansão com melhor custo-benefício! 🌾</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Digite sua pergunta...">
+                        <button class="send-btn">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comentários Section -->
+    <section id="comentarios" class="comentarios">
+        <div class="container">
+            <h2 class="section-title">Comentários e Experiências</h2>
+            <p class="section-subtitle">Compartilhe sua experiência com outros usuários</p>
+            
+            <div class="comentarios-container">
+                <div class="comment-form">
+                    <h3>Deixe seu comentário</h3>
+                    <div class="state-selector">
+                        <button class="state-btn active" data-state="mt">🌾 Mato Grosso</button>
+                        <button class="state-btn" data-state="pr">🏭 Paraná</button>
+                    </div>
+                    <textarea placeholder="Compartilhe sua experiência, opinião ou pergunta..."></textarea>
+                    <button class="submit-btn">Publicar Comentário</button>
+                </div>
+
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <p class="comment-author">João Silva</p>
+                            <span class="comment-state mt">MT</span>
+                        </div>
+                        <p class="comment-text">Mudei para Mato Grosso há 2 anos e adorei! Custo de vida muito mais acessível e oportunidades de negócios crescendo. Recomendo!</p>
+                        <p class="comment-date">14 de março de 2026</p>
+                    </div>
+
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <p class="comment-author">Maria Santos</p>
+                            <span class="comment-state pr">PR</span>
+                        </div>
+                        <p class="comment-text">Paraná é ótimo para quem quer diversidade. Muitas indústrias, bom comércio e infraestrutura excelente. Melhor para quem busca estabilidade.</p>
+                        <p class="comment-date">12 de março de 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Plataforma Comparativa MG vs PR. Todos os direitos reservados.</p>
+            <p>Desenvolvido com ❤️ para ajudar sua decisão</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
