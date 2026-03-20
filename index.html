@@ -185,34 +185,42 @@
         </div>
     </section>
 
-    <!-- IA Section -->
-    <section id="ia" class="ia-section">
-        <div class="container">
-            <h2 class="section-title">Análise com IA</h2>
-            <p class="section-subtitle">Converse com nossa inteligência artificial para análises personalizadas</p>
-            
-            <div class="ia-container">
-                <div class="chat-box">
-                    <div class="chat-messages" id="chatMessages">
-                        <!-- As mensagens serão adicionadas via JavaScript -->
-                    </div>
-                    <div class="suggestions-chips" id="suggestionsChips">
-                        <button class="chip" data-question="Comparar produtividade MT e PR">📊 Comparar produtividade</button>
-                        <button class="chip" data-question="Melhor estado para investir no agro">💰 Melhor para investir</button>
-                        <button class="chip" data-question="Tecnologias no campo">🚜 Tecnologias</button>
-                        <button class="chip" data-question="Desafios do produtor rural">🌾 Desafios</button>
-                    </div>
-                    <div class="chat-input">
-                        <input type="text" id="chatInput" placeholder="Digite sua pergunta...">
-                        <button class="send-btn" id="sendBtn">Enviar</button>
-                    </div>
-                    <div class="chat-footer">
-                        <span class="typing-indicator" id="typingIndicator">🤖 Assistente está digitando...</span>
+    <!-- IA Section (agora oculta, será mostrada pelo botão flutuante) -->
+    <div id="ia-floating-container" class="ia-floating-container">
+        <div class="chat-box">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <span class="chat-avatar">🌾</span>
+                    <div>
+                        <h4>AgroAssistente</h4>
+                        <p>Especialista em MT vs PR</p>
                     </div>
                 </div>
+                <button class="close-chat" id="closeChatBtn">✕</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Mensagens serão inseridas via JS -->
+            </div>
+            <div class="suggestions-chips" id="suggestionsChips">
+                <button class="chip" data-question="Comparar produtividade MT e PR">📊 Comparar produtividade</button>
+                <button class="chip" data-question="Melhor estado para investir no agro">💰 Melhor para investir</button>
+                <button class="chip" data-question="Tecnologias no campo">🚜 Tecnologias</button>
+                <button class="chip" data-question="Desafios do produtor rural">🌾 Desafios</button>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Digite sua pergunta...">
+                <button class="send-btn" id="sendBtn">Enviar</button>
+            </div>
+            <div class="chat-footer">
+                <span class="typing-indicator" id="typingIndicator">🤖 Assistente está digitando...</span>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Botão flutuante da IA -->
+    <button class="chat-float-btn" id="chatFloatBtn">
+        💬
+    </button>
 
     <!-- Comentários Section -->
     <section id="comentarios" class="comentarios">
